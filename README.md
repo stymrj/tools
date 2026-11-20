@@ -1,8 +1,10 @@
 # Tools — PriceDrop Hunter
 
 A single self-contained page listing all ten PriceDrop Hunter tools in one
-place, served at `http://satyamraj.in/tools`. No build step, no external
-dependencies: all CSS and JS are inline in `index.html`.
+place, served at `http://satyamraj.in/tools`. No build step: all CSS and JS
+are inline in `index.html`. The one external dependency is Google Fonts
+(Plus Jakarta Sans for headings, Inter for body, loaded from
+`fonts.googleapis.com` with system-font fallbacks if it fails to load).
 
 ## The page
 
@@ -12,6 +14,10 @@ with a yellow marker highlight on the second line, a stats strip (10
 tools, 9 stores + hub, ₹0 free), a colour strip with one segment per tool,
 and white cards with a vibrant per-store accent bar, emoji icon tile and
 brand-coloured button. No theme toggle: the page is light by design.
+Typography is Plus Jakarta Sans (headings) over Inter (body). The top nav
+is slim and sticky ("Tools" wordmark, links to All tools / About / How it
+works), cards lift on hover with soft layered shadows, and sections fade in
+gently on scroll (disabled under `prefers-reduced-motion`).
 
 Sections, in order:
 
@@ -70,5 +76,6 @@ For the new card, set:
   label `Open tool →`, `aria-label="Open <Tool Name>"`, linking to the tool's
   live page at `http://satyamraj.in/<Repo>/`.
 
-Keep the page self-contained: no external fonts, scripts, images, or links
-outside the live tool pages and the hub link in the header and footer.
+Keep the page self-contained apart from the Google Fonts link: no other
+external fonts, scripts, images, or links outside the live tool pages and
+the hub link in the header and footer.
