@@ -4,6 +4,28 @@ A single self-contained page listing all ten PriceDrop Hunter tools in one
 place, served at `http://satyamraj.in/tools`. No build step, no external
 dependencies: all CSS and JS are inline in `index.html`.
 
+## The page
+
+Dark-only, colourful design — a bold redesign, deliberately different from
+the hub: oversized headline ("Every tool. One page."), a stats strip (10
+tools, 9 stores + hub, ₹0 free), a colour strip with one segment per tool,
+and dark cards with a vibrant per-store accent bar, emoji icon tile and
+brand-coloured button. No theme toggle: the page is dark-only by design.
+
+Sections, in order:
+
+1. **Hero** — headline, one-line intro, a prominent "Open PriceDrop Hunter"
+   button to `http://satyamraj.in/PriceDrop-Hunter/`, and the stats strip
+   (true counts only — no invented user counts, ratings or savings).
+2. **All tools** — the full grid of all 10 tools, hub first as a featured
+   full-width yellow card, with the search box, category filter chips and
+   "Showing X of 10 tools" count.
+3. **About me** — a brief intro using only verified wording (no invented
+   biographical detail, no social/GitHub links).
+4. **How to use** — 3 simple steps, plus a short FAQ (free? account?
+   which stores?) whose answers are verified against the live tool pages.
+5. **Footer** — one line linking back to PriceDrop Hunter.
+
 ## Tools
 
 | Tool | Category | Live page |
