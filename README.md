@@ -6,11 +6,12 @@ dependencies: all CSS and JS are inline in `index.html`.
 
 ## The page
 
-Dark-only, colourful design — a bold redesign, deliberately different from
-the hub: oversized headline ("Every tool. One page."), a stats strip (10
+Light, colourful design — a bold redesign, deliberately different from
+the hub: warm off-white page, oversized headline ("Every tool. One page.")
+with a yellow marker highlight on the second line, a stats strip (10
 tools, 9 stores + hub, ₹0 free), a colour strip with one segment per tool,
-and dark cards with a vibrant per-store accent bar, emoji icon tile and
-brand-coloured button. No theme toggle: the page is dark-only by design.
+and white cards with a vibrant per-store accent bar, emoji icon tile and
+brand-coloured button. No theme toggle: the page is light by design.
 
 Sections, in order:
 
@@ -20,8 +21,15 @@ Sections, in order:
 2. **All tools** — the full grid of all 10 tools, hub first as a featured
    full-width yellow card, with the search box, category filter chips and
    "Showing X of 10 tools" count.
-3. **About me** — a brief intro using only verified wording (no invented
-   biographical detail, no social/GitHub links).
+3. **About the Developer** — a proper first-person intro: Satyam Raj,
+   Software Developer working on AI projects at Extension Technologies
+   (1+ years), founder of Setuware Technologies, B.Tech CSE from DIT
+   University, Dehradun (class of 2024), builder of PriceDrop Hunter
+   (nine store deal-finders plus a Telegram deals bot sending fresh deals
+   every 15 minutes), and open-source contributor (Kestra,
+   terraform-aws-github-runner) — plus highlight chips. Uses only
+   verified wording (no invented biographical detail, no social/GitHub
+   links); the word "Telegram" appears once, in the About prose only.
 4. **How to use** — 3 simple steps, plus a short FAQ (free? account?
    which stores?) whose answers are verified against the live tool pages.
 5. **Footer** — one line linking back to PriceDrop Hunter.

@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tools — PriceDrop Hunter</title>
 <meta name="description" content="All ten PriceDrop Hunter tools in one place — pick a store and find the biggest discounts.">
-<meta name="theme-color" content="#0a0c11">
+<meta name="theme-color" content="#faf8f2">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ffd43b'/%3E%3Cpath d='M16 7v12M10 15l6 6 6-6' fill='none' stroke='%23101218' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 26h12' stroke='%23101218' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
 :root{
-  --bg:#0a0c11; --bg2:#10141d; --sf:#141926; --tx:#f2f4f8; --mt:#9aa3b5;
-  --bd:#262c3a; --ink:#0a0c11; --ac:#ffd43b; --pink:#ff6b9d; --green:#37d67a;
+  --bg:#faf8f2; --bg2:#ffffff; --sf:#ffffff; --tx:#1a1c22; --mt:#5a606e;
+  --bd:#e3ddcf; --ink:#f1ede3; --ac:#ffd43b; --amb:#8a6400; --pink:#ff6b9d; --green:#37d67a;
   --blue:#4cc2ff;
   --hf:"Bricolage Grotesque",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
@@ -22,7 +22,7 @@ a{color:inherit}
 
 /* ---- Nav ---- */
 nav{display:flex; align-items:center; gap:26px; min-height:76px; padding:14px 0}
-.brand{display:flex; align-items:center; gap:11px; font:800 19px/1 var(--hf); text-decoration:none; color:#fff}
+.brand{display:flex; align-items:center; gap:11px; font:800 19px/1 var(--hf); text-decoration:none; color:var(--tx)}
 .mk{width:34px; height:34px; border-radius:10px; background:var(--ac); color:#111; display:grid; place-items:center}
 .nav-cta{margin-left:auto}
 
@@ -32,13 +32,13 @@ nav{display:flex; align-items:center; gap:26px; min-height:76px; padding:14px 0}
 
 /* ---- Hero ---- */
 .hero{padding:18px 0 72px}
-.kicker{display:inline-block; font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:.14em; color:var(--ac); border:1px solid rgba(255,212,59,.45); border-radius:99px; padding:7px 14px}
+.kicker{display:inline-block; font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:.14em; color:var(--amb); border:1px solid rgba(138,100,0,.4); border-radius:99px; padding:7px 14px}
 .hero h1{font-size:clamp(54px,9vw,112px); line-height:.95; letter-spacing:-.035em; font-weight:800; margin:26px 0 20px}
-.hero h1 .hl{color:var(--ac)}
+.hero h1 .hl{color:var(--tx); background-image:linear-gradient(transparent 60%,var(--ac) 60%,var(--ac) 93%,transparent 93%)}
 .lead{font-size:clamp(18px,2.4vw,22px); color:var(--mt); max-width:34em; margin:0 0 30px}
 .cta-row{display:flex; flex-wrap:wrap; align-items:center; gap:18px}
 .btn{display:inline-flex; align-items:center; gap:10px; min-height:56px; padding:0 28px; border-radius:16px; font-weight:800; font-size:17px; text-decoration:none; cursor:pointer; border:0}
-.btn.pri{background:var(--ac); color:#111; box-shadow:0 12px 32px rgba(255,212,59,.22)}
+.btn.pri{background:var(--ac); color:#111; box-shadow:0 12px 32px rgba(255,212,59,.45)}
 .btn.pri:hover{transform:translateY(-2px)}
 .btn.sm{min-height:44px; padding:0 18px; border-radius:12px; font-size:15px}
 .cta-note{color:var(--mt); font-size:15px; font-weight:600}
@@ -52,7 +52,7 @@ nav{display:flex; align-items:center; gap:26px; min-height:76px; padding:14px 0}
 /* ---- Sections ---- */
 section{padding:72px 0}
 section.alt{background:var(--bg2); border-top:1px solid var(--bd); border-bottom:1px solid var(--bd)}
-.sec-kicker{font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:.14em; color:var(--ac)}
+.sec-kicker{font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:.14em; color:var(--amb)}
 section h2{font-size:clamp(32px,4.5vw,50px); line-height:1.02; margin:10px 0 14px}
 .sec-intro{color:var(--mt); font-size:18px; max-width:36em; margin:0 0 34px}
 
@@ -79,7 +79,7 @@ section h2{font-size:clamp(32px,4.5vw,50px); line-height:1.02; margin:10px 0 14p
 .store p{color:var(--mt); font-size:15px; margin:0}
 .store ul{list-style:none; padding:0; margin:0; display:grid; gap:6px; font-size:14px; font-weight:600}
 .store li .ic-tick{color:var(--brand)}
-.tag{display:inline-flex; align-items:center; gap:7px; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; background:rgba(255,255,255,.07); border-radius:99px; padding:4px 10px; align-self:flex-start; color:var(--tx)}
+.tag{display:inline-flex; align-items:center; gap:7px; font-size:12px; font-weight:800; text-transform:uppercase; letter-spacing:.06em; background:rgba(26,28,34,.06); border-radius:99px; padding:4px 10px; align-self:flex-start; color:var(--tx)}
 .tag::before{content:""; width:8px; height:8px; border-radius:50%; background:var(--brand)}
 .store .acts{display:flex; gap:8px; flex-wrap:wrap; margin-top:auto}
 .sb{display:inline-flex; align-items:center; gap:7px; min-height:42px; padding:8px 16px; border-radius:12px; font-weight:800; font-size:15px; text-decoration:none; cursor:pointer; border:0; background:var(--brand); color:#fff}
@@ -103,8 +103,11 @@ section h2{font-size:clamp(32px,4.5vw,50px); line-height:1.02; margin:10px 0 14p
 .empty.show{display:block}
 
 /* ---- About ---- */
-.about p{font-size:clamp(19px,2.6vw,24px); line-height:1.5; font-weight:600; max-width:34em; margin:0}
-.about p b{color:var(--ac)}
+.about p{font-size:17px; line-height:1.7; font-weight:400; color:var(--tx); max-width:38em; margin:0 0 16px}
+.about p b{color:var(--tx)}
+.about-chips{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px}
+.about-chip{display:inline-flex; align-items:center; border-radius:99px; min-height:42px; padding:6px 18px; font-weight:700; font-size:14px; border:1px solid var(--bd); background:var(--sf); color:var(--tx)}
+.about-chip::before{content:""; width:8px; height:8px; border-radius:50%; background:var(--ac); margin-right:9px; border:1px solid rgba(0,0,0,.15)}
 
 /* ---- How to use ---- */
 .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
@@ -117,13 +120,13 @@ section h2{font-size:clamp(32px,4.5vw,50px); line-height:1.02; margin:10px 0 14p
 .faq{max-width:780px; display:grid; gap:12px}
 .faq details{background:var(--sf); border:1px solid var(--bd); border-radius:16px; padding:18px 22px}
 .faq summary{font:800 18px var(--hf); letter-spacing:-.02em; cursor:pointer}
-.faq summary::marker{color:var(--ac)}
+.faq summary::marker{color:var(--amb)}
 .faq p{color:var(--mt); font-size:15px; margin:12px 0 2px}
 
 /* ---- Footer ---- */
-footer{background:var(--ink); color:#fff; border-top:1px solid var(--bd)}
+footer{background:var(--ink); color:var(--tx); border-top:1px solid var(--bd)}
 footer .wrap{display:flex; justify-content:space-between; align-items:center; gap:20px; flex-wrap:wrap; padding-top:38px; padding-bottom:38px}
-footer a{font-weight:800; text-decoration:underline; text-underline-offset:3px; color:#fff}
+footer a{font-weight:800; text-decoration:underline; text-underline-offset:3px; color:var(--tx)}
 footer .brand{text-decoration:none}
 
 @media(max-width:960px){
@@ -151,7 +154,7 @@ footer .brand{text-decoration:none}
     </nav>
     <div class="colourbar" aria-hidden="true"><span style="background:#ffd43b"></span><span style="background:#2874f0"></span><span style="background:#0c831f"></span><span style="background:#ff9900"></span><span style="background:#e8650a"></span><span style="background:#4a7c14"></span><span style="background:#ff3269"></span><span style="background:#0078ad"></span><span style="background:#d6204e"></span><span style="background:#12daa8"></span></div>
     <h1>Every tool.<br><span class="hl">One page.</span></h1>
-    <p class="lead">Every PriceDrop Hunter tool in one place — pick a store and find the biggest discounts.</p>
+    <p class="lead">Every PriceDrop Hunter tool in one place — pick your store, find the biggest discounts, and save more on every order.</p>
     <div class="cta-row">
       <a class="btn pri" href="http://satyamraj.in/PriceDrop-Hunter/">Open PriceDrop Hunter →</a>
       <span class="cta-note">Start with the all-stores hub, or pick your store below.</span>
@@ -323,9 +326,16 @@ footer .brand{text-decoration:none}
 
 <section class="alt about" id="about">
   <div class="wrap">
-    <span class="sec-kicker">About me</span>
-    <h2>Built by someone who shops too.</h2>
-    <p>I'm <b>Satyam Raj</b> — a Software Developer working on AI projects, and founder of Setuware Technologies. I build free tools that help people save money while shopping online.</p>
+    <span class="sec-kicker">About the Developer</span>
+    <h2>Meet the developer — Satyam Raj.</h2>
+    <p>Hi, I'm <b>Satyam Raj</b> — a Software Developer working on AI projects at Extension Technologies for over a year now, and the founder of Setuware Technologies, a software-services startup. I studied Computer Science at DIT University, Dehradun, and graduated with my B.Tech in 2024.</p>
+    <p>I built PriceDrop Hunter because I kept hunting for the same discounts across nine different stores — so I made one place that does the hunting for me, and for you: nine store deal-finders, plus a Telegram bot that sends fresh deals every 15 minutes. I also contribute to open source — Kestra and terraform-aws-github-runner among them — and everything on this page is free to use. No accounts, no catch.</p>
+    <div class="about-chips">
+      <span class="about-chip">Software Developer · AI Projects</span>
+      <span class="about-chip">Founder @ Setuware</span>
+      <span class="about-chip">B.Tech CSE '24</span>
+      <span class="about-chip">Open Source Contributor</span>
+    </div>
   </div>
 </section>
 
