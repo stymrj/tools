@@ -1,7 +1,7 @@
 # Tools — PriceDrop Hunter
 
 A single self-contained page listing all ten PriceDrop Hunter tools in one
-place, served at `http://satyamraj.in/tools`. No build step: all CSS and JS
+place, served at `https://satyamraj.in/tools`. No build step: all CSS and JS
 are inline in `index.html`. The one external dependency is Google Fonts
 (Plus Jakarta Sans for headings, Inter for body, loaded from
 `fonts.googleapis.com` with system-font fallbacks if it fails to load).
@@ -22,7 +22,7 @@ gently on scroll (disabled under `prefers-reduced-motion`).
 Sections, in order:
 
 1. **Hero** — headline, one-line intro, a prominent "Open PriceDrop Hunter"
-   button to `http://satyamraj.in/PriceDrop-Hunter/`, and the stats strip
+   button to `https://satyamraj.in/PriceDrop-Hunter/`, and the stats strip
    (true counts only — no invented user counts, ratings or savings).
 2. **All tools** — the full grid of all 10 tools, hub first as a featured
    full-width yellow card, with the search box, category filter chips and
@@ -44,16 +44,16 @@ Sections, in order:
 
 | Tool | Category | Live page |
 |---|---|---|
-| PriceDrop Hunter — All Stores | All Stores | http://satyamraj.in/PriceDrop-Hunter/ |
-| Flipkart Minutes Deals | Shopping | http://satyamraj.in/Flipkart-Minute-Deals/ |
-| Blinkit Deals | Grocery & Quick Commerce | http://satyamraj.in/Blinkit-Deals/ |
-| Amazon Now Deals | Shopping | http://satyamraj.in/Amazon-Now-Deals/ |
-| Swiggy Instamart Deals | Grocery & Quick Commerce | http://satyamraj.in/Swiggy-Instamart-Deals/ |
-| BigBasket Deals | Grocery & Quick Commerce | http://satyamraj.in/BigBasket-Deals/ |
-| Zepto Deals | Grocery & Quick Commerce | http://satyamraj.in/Zepto-Deals/ |
-| JioMart Deals | Grocery & Quick Commerce | http://satyamraj.in/JioMart-Deals/ |
-| Myntra Deals | Fashion | http://satyamraj.in/Myntra-Deals/ |
-| Croma Deals | Electronics | http://satyamraj.in/Croma-Deals/ |
+| PriceDrop Hunter — All Stores | All Stores | https://satyamraj.in/PriceDrop-Hunter/ |
+| Flipkart Minutes Deals | Shopping | https://satyamraj.in/Flipkart-Minute-Deals/ |
+| Blinkit Deals | Grocery & Quick Commerce | https://satyamraj.in/Blinkit-Deals/ |
+| Amazon Now Deals | Shopping | https://satyamraj.in/Amazon-Now-Deals/ |
+| Swiggy Instamart Deals | Grocery & Quick Commerce | https://satyamraj.in/Swiggy-Instamart-Deals/ |
+| BigBasket Deals | Grocery & Quick Commerce | https://satyamraj.in/BigBasket-Deals/ |
+| Zepto Deals | Grocery & Quick Commerce | https://satyamraj.in/Zepto-Deals/ |
+| JioMart Deals | Grocery & Quick Commerce | https://satyamraj.in/JioMart-Deals/ |
+| Myntra Deals | Fashion | https://satyamraj.in/Myntra-Deals/ |
+| Croma Deals | Electronics | https://satyamraj.in/Croma-Deals/ |
 
 All links use `http://` — HTTPS does not serve on this domain yet.
 
@@ -74,7 +74,7 @@ For the new card, set:
   on the hub and the tool's own page.
 - The single button: class `sb fill`, `style="background:<brand colour>"`,
   label `Open tool →`, `aria-label="Open <Tool Name>"`, linking to the tool's
-  live page at `http://satyamraj.in/<Repo>/`.
+  live page at `https://satyamraj.in/<Repo>/`.
 
 Keep the page self-contained apart from the Google Fonts link: no other
 external fonts, scripts, images, or links outside the live tool pages and
